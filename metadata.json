@@ -1,0 +1,8 @@
+{
+  "name": "Sants Fotograf.ia",
+  "description": "Loja virtual de fotografias hiper-realistas criadas com inteligência artificial para aniversários, casais e turismo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

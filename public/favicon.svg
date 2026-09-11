@@ -1,0 +1,220 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Soft shadow filter for 3D wood depth -->
+    <filter id="woodShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.18" />
+    </filter>
+    <filter id="photoShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.22" />
+    </filter>
+    
+    <!-- Warm beige wood gradient -->
+    <linearGradient id="woodBeigeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2D4C3" />
+      <stop offset="35%" stop-color="#D7C4AF" />
+      <stop offset="70%" stop-color="#CBB59D" />
+      <stop offset="100%" stop-color="#BFAB93" />
+    </linearGradient>
+
+    <!-- Wood edge highlight -->
+    <linearGradient id="woodEdgeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EFE6DB" />
+      <stop offset="100%" stop-color="#B8A28A" />
+    </linearGradient>
+  </defs>
+
+  <!-- Base Wooden 'S' Silhouette -->
+  <g filter="url(#woodShadow)">
+    <path d="M 390 135 C 390 65, 330 25, 250 25 C 160 25, 95 75, 95 155 C 95 240, 185 270, 260 295 C 330 320, 385 345, 385 410 C 385 470, 320 505, 235 505 C 140 505, 75 455, 65 375 L 145 365 C 150 415, 185 445, 240 445 C 290 445, 315 420, 315 390 C 315 330, 240 300, 160 270 C 95 240, 30 195, 30 135 C 30 55, 110 0, 250 0 C 365 0, 455 50, 455 140 Z" fill="url(#woodBeigeGrad)" stroke="url(#woodEdgeGrad)" stroke-width="4" transform="matrix(0.88, 0, 0, 0.88, 38, 28)" />
+  </g>
+
+  <!-- Photo Collage Mosaic Overlays with white borders across the 'S' curve -->
+  <!-- Top Arc Photos -->
+  <g filter="url(#photoShadow)">
+    <!-- Photo 1: Beach family -->
+    <g transform="translate(145, 45) rotate(-6)">
+      <rect x="0" y="0" width="70" height="52" rx="2" fill="#FFFFFF" />
+      <rect x="3" y="3" width="64" height="46" rx="1" fill="#E8DCD1" />
+      <path d="M 3 32 Q 25 24 45 35 T 67 30 L 67 49 L 3 49 Z" fill="#D3C0AF" />
+      <circle cx="24" cy="18" r="5" fill="#B39B84" />
+      <circle cx="38" cy="16" r="6" fill="#A88F76" />
+      <circle cx="50" cy="20" r="4.5" fill="#C5B19E" />
+    </g>
+
+    <!-- Photo 2: Couple golden hour -->
+    <g transform="translate(225, 30) rotate(4)">
+      <rect x="0" y="0" width="68" height="54" rx="2" fill="#FFFFFF" />
+      <rect x="3" y="3" width="62" height="48" rx="1" fill="#F1E7DD" />
+      <circle cx="26" cy="20" r="7" fill="#BD9F83" />
+      <circle cx="42" cy="22" r="6.5" fill="#CDAE92" />
+      <path d="M 3 36 Q 30 28 65 38 L 65 51 L 3 51 Z" fill="#A58B72" opacity="0.6" />
+    </g>
+
+    <!-- Photo 3: Wedding bride & groom -->
+    <g transform="translate(295, 40) rotate(12)">
+      <rect x="0" y="0" width="65" height="60" rx="2" fill="#FFFFFF" />
+      <rect x="3" y="3" width="59" height="54" rx="1" fill="#EBE5DC" />
+      <path d="M 38 22 L 54 57 L 22 57 Z" fill="#F7F5F0" />
+      <rect x="12" y="24" width="18" height="33" rx="2" fill="#3D3833" />
+      <circle cx="21" cy="16" r="5.5" fill="#C4AB94" />
+      <circle cx="40" cy="15" r="5.5" fill="#DFC9B5" />
+    </g>
+
+    <!-- Photo 4: Flowers portrait -->
+    <g transform="translate(365, 80) rotate(-4)">
+      <rect x="0" y="0" width="50" height="66" rx="2" fill="#FFFFFF" />
+      <rect x="3" y="3" width="44" height="60" rx="1" fill="#EFE8E1" />
+      <circle cx="25" cy="30" r="14" fill="#D8BEA7" />
+      <circle cx="25" cy="30" r="8" fill="#C1A48B" />
+      <rect x="22" y="44" width="6" height="19" fill="#998370" />
+    </g>
+
+    <!-- Top Left Arch Photos -->
+    <!-- Photo 5: Portrait wedding -->
+    <g transform="translate(85, 100) rotate(14)">
+      <rect x="0" y="0" width="64" height="52" rx="2" fill="#FFFFFF" />
+      <rect x="3" y="3" width="58" height="46" rx="1" fill="#EAE0D5" />
+      <circle cx="22" cy="18" r="6" fill="#4B443D" />
+      <circle cx="38" cy="20" r="5.5" fill="#DFD2C4" />
+      <path d="M 3 34 Q 30 26 61 36 L 61 49 L 3 49 Z" fill="#AFA091" />
+    </g>
+
+    <!-- Photo 6: Birthday girl smile -->
+    <g transform="translate(95, 160) rotate(-8)">
+      <rect x="0" y="0" width="68" height="54" rx="2" fill="#FFFFFF" />
+      <rect x="3" y="3" width="62" height="48" rx="1" fill="#F4EDE4" />
+      <circle cx="34" cy="22" r="10" fill="#CBB29C" />
+      <path d="M 12 45 Q 34 32 56 45 L 56 51 L 12 51 Z" fill="#DFC6B1" />
+    </g>
+
+    <!-- Photo 7: Couple in meadow -->
+    <g transform="translate(160, 170) rotate(6)">
+      <rect x="0" y="0" width="70" height="55" rx="2" fill="#FFFFFF" />
+      <rect x="3" y="3" width="64" height="49" rx="1" fill="#E5DDD2" />
+      <circle cx="26" cy="22" r="7" fill="#695D51" />
+      <circle cx="44" cy="22" r="6.5" fill="#E8D2BF" />
+      <path d="M 3 36 Q 32 28 67 36 L 67 52 L 3 52 Z" fill="#889C82" opacity="0.65" />
+    </g>
+
+    <!-- Photo 8: Mother with baby -->
+    <g transform="translate(325, 115) rotate(7)">
+      <rect x="0" y="0" width="55" height="66" rx="2" fill="#FFFFFF" />
+      <rect x="3" y="3" width="49" height="60" rx="1" fill="#F8F3EC" />
+      <circle cx="24" cy="22" r="8" fill="#D3BAA4" />
+      <circle cx="36" cy="34" r="5" fill="#EBD6C5" />
+      <path d="M 8 50 Q 25 36 44 50 L 44 63 L 8 63 Z" fill="#D8C2AF" />
+    </g>
+
+    <!-- Center Diagonal & Spine Photos -->
+    <!-- Photo 9: Family 4 persons -->
+    <g transform="translate(150, 225) rotate(-3)">
+      <rect x="0" y="0" width="72" height="54" rx="2" fill="#FFFFFF" />
+      <rect x="3" y="3" width="66" height="48" rx="1" fill="#EDE4D9" />
+      <circle cx="16" cy="20" r="4.5" fill="#4A443E" />
+      <circle cx="28" cy="18" r="5" fill="#5B534C" />
+      <circle cx="42" cy="19" r="4.5" fill="#DDBEA6" />
+      <circle cx="54" cy="22" r="4" fill="#C5A890" />
+      <path d="M 3 34 Q 36 26 69 36 L 69 51 L 3 51 Z" fill="#BFAB97" />
+    </g>
+
+    <!-- Photo 10: Maternity outdoor -->
+    <g transform="translate(225, 230) rotate(9)">
+      <rect x="0" y="0" width="56" height="70" rx="2" fill="#FFFFFF" />
+      <rect x="3" y="3" width="50" height="64" rx="1" fill="#F5EFE8" />
+      <circle cx="26" cy="22" r="8.5" fill="#D1B8A3" />
+      <path d="M 12 40 Q 32 30 42 58 L 10 58 Z" fill="#E3CFBE" />
+      <path d="M 3 50 Q 25 44 53 50 L 53 67 L 3 67 Z" fill="#B39E8A" />
+    </g>
+
+    <!-- Photo 11: Graduation portrait -->
+    <g transform="translate(305, 235) rotate(-10)">
+      <rect x="0" y="0" width="54" height="66" rx="2" fill="#FFFFFF" />
+      <rect x="3" y="3" width="48" height="60" rx="1" fill="#EAE2D8" />
+      <polygon points="24,10 38,15 24,20 10,15" fill="#262320" />
+      <circle cx="24" cy="26" r="6.5" fill="#DDBFA8" />
+      <rect x="12" y="38" width="24" height="25" rx="2" fill="#2B2724" />
+    </g>
+
+    <!-- Photo 12: Father holding baby -->
+    <g transform="translate(325, 290) rotate(5)">
+      <rect x="0" y="0" width="66" height="56" rx="2" fill="#FFFFFF" />
+      <rect x="3" y="3" width="60" height="50" rx="1" fill="#F1ECE4" />
+      <circle cx="26" cy="22" r="9" fill="#5E5349" />
+      <circle cx="44" cy="26" r="6" fill="#F0DCCC" />
+      <path d="M 8 44 Q 30 34 56 46 L 56 53 L 8 53 Z" fill="#CCAFA0" />
+    </g>
+
+    <!-- Bottom Arch & Spine Photos -->
+    <!-- Photo 13: Vintage flower frame -->
+    <g transform="translate(65, 335) rotate(3)">
+      <rect x="0" y="0" width="55" height="66" rx="2" fill="#FFFFFF" />
+      <rect x="3" y="3" width="49" height="60" rx="1" fill="#E8DFD5" />
+      <circle cx="25" cy="28" r="12" fill="#C9AD95" />
+      <path d="M 12 50 L 38 50 L 25 38 Z" fill="#998371" />
+    </g>
+
+    <!-- Photo 14: Sunset couple beach -->
+    <g transform="translate(105, 330) rotate(-6)">
+      <rect x="0" y="0" width="76" height="58" rx="2" fill="#FFFFFF" />
+      <rect x="3" y="3" width="70" height="52" rx="1" fill="#F8EFE4" />
+      <circle cx="54" cy="18" r="11" fill="#E9B77F" opacity="0.6" />
+      <circle cx="28" cy="24" r="5.5" fill="#4B4137" />
+      <circle cx="40" cy="25" r="5" fill="#66594C" />
+      <path d="M 3 38 Q 38 30 73 38 L 73 55 L 3 55 Z" fill="#D3C0AD" />
+    </g>
+
+    <!-- Photo 15: Cute baby sitting -->
+    <g transform="translate(110, 410) rotate(4)">
+      <rect x="0" y="0" width="68" height="54" rx="2" fill="#FFFFFF" />
+      <rect x="3" y="3" width="62" height="48" rx="1" fill="#FAF6F0" />
+      <circle cx="34" cy="20" r="8" fill="#F3DFD1" />
+      <rect x="22" y="32" width="24" height="20" rx="6" fill="#E9DCD1" />
+    </g>
+
+    <!-- Photo 16: Mother with blond toddler -->
+    <g transform="translate(180, 395) rotate(-8)">
+      <rect x="0" y="0" width="62" height="60" rx="2" fill="#FFFFFF" />
+      <rect x="3" y="3" width="56" height="54" rx="1" fill="#EFE8DF" />
+      <circle cx="38" cy="20" r="7.5" fill="#DEC6B2" />
+      <circle cx="20" cy="26" r="6" fill="#F7E6D7" />
+      <path d="M 5 44 Q 30 32 55 44 L 55 57 L 5 57 Z" fill="#C4AA94" />
+    </g>
+
+    <!-- Photo 17: Golden sunset horizon -->
+    <g transform="translate(235, 400) rotate(5)">
+      <rect x="0" y="0" width="68" height="52" rx="2" fill="#FFFFFF" />
+      <rect x="3" y="3" width="62" height="46" rx="1" fill="#F5ECE2" />
+      <circle cx="32" cy="16" r="8" fill="#E5BE8E" opacity="0.75" />
+      <circle cx="28" cy="26" r="4.5" fill="#52473D" />
+      <circle cx="38" cy="27" r="4.5" fill="#695C50" />
+      <path d="M 3 34 Q 34 26 65 34 L 65 49 L 3 49 Z" fill="#C1AB97" />
+    </g>
+
+    <!-- Photo 18: Sleeping newborn basket -->
+    <g transform="translate(305, 385) rotate(-6)">
+      <rect x="0" y="0" width="66" height="56" rx="2" fill="#FFFFFF" />
+      <rect x="3" y="3" width="60" height="50" rx="1" fill="#FAF6F0" />
+      <ellipse cx="33" cy="35" rx="20" ry="12" fill="#E6D3C1" />
+      <circle cx="32" cy="26" r="6" fill="#F7E6D9" />
+    </g>
+
+    <!-- Photo 19: Romantic kiss couple -->
+    <g transform="translate(225, 450) rotate(-2)">
+      <rect x="0" y="0" width="70" height="50" rx="2" fill="#FFFFFF" />
+      <rect x="3" y="3" width="64" height="44" rx="1" fill="#EAE2D8" />
+      <circle cx="28" cy="18" r="6" fill="#3D3630" />
+      <circle cx="42" cy="18" r="5.5" fill="#E2C9B4" />
+      <path d="M 3 30 Q 35 24 67 30 L 67 47 L 3 47 Z" fill="#A89481" />
+    </g>
+
+    <!-- Photo 20: Happy wedding couple -->
+    <g transform="translate(330, 335) rotate(14)">
+      <rect x="0" y="0" width="62" height="66" rx="2" fill="#FFFFFF" />
+      <rect x="3" y="3" width="56" height="60" rx="1" fill="#F2ECE4" />
+      <circle cx="22" cy="20" r="6" fill="#38312B" />
+      <circle cx="38" cy="22" r="5.5" fill="#DECAB8" />
+      <path d="M 28 34 L 52 63 L 18 63 Z" fill="#FDFCFA" />
+      <rect x="10" y="32" width="16" height="31" rx="2" fill="#2E2824" />
+    </g>
+  </g>
+</svg>

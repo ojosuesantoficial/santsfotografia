@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function() {
+        try {
+          var _origFetch = window.fetch;
+          if (_origFetch) {
+            Object.defineProperty(window, 'fetch', {
+              get: function() { return _origFetch; },
+              set: function(fn) { _origFetch = fn; },
+              configurable: true,
+              enumerable: true
+            });
+          }
+        } catch (e) {
+          // Ignore if cannot be redefined
+        }
+      })();
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate icon" type="image/svg+xml" href="/logo_s.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <title>Sants Fotograf.ia — Fotos hiper-realistas criadas com IA</title>
+    <meta name="description" content="Transforme seus momentos em fotografias hiper-realistas criadas com inteligência artificial. Download instantâneo." />
+    <meta property="og:title" content="Sants Fotograf.ia" />
+    <meta property="og:description" content="Fotografias hiper-realistas criadas com inteligência artificial para aniversários, casais e turismo." />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+  </head>
+  <body class="bg-[#F8F7F5] text-[#111111] font-sans antialiased selection:bg-[#A6825B] selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
